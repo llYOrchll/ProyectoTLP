@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Todo sobre Go!</title>
+    <meta name="description"
+        content="Proyecto de Teoria de Lenguajes de la ¨Programación. Pagina con informacion acerca del lenguaje de programación Go" />
+    <meta name="author" content="Jorge Guerrero Orozco y Javier Chi Ortiz" />
+    <meta name="KeyWords"
+        content="Lenguaje Go, Historia de Go, Informacion de Go, Go, Lenguaje de programación Go, Estructuras de control Go, ciclos Go, if, Go" />
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" type="image/png" href="Images/favicon.png">
+</head>
+
+<body>
+    <div class="agrupar">
+        <header class="cabecera">
+            <h1 style="background-color: blue;">Estructuras de control de flujo en Go</h1>
+        </header>
+        <nav class="menuInicial">
+            <ul style="background-color: blue;">
+                <li class="submenu"><a href="index.html" style="color: whitesmoke;">Historia de Go</a> </li>
+                <li class="submenu"><a href="tiposVariablesDatos.html" style="color: whitesmoke;">Variables y Tipos de
+                        Datos</a></li>
+                <li class="submenu"><a href="" style="color: whitesmoke;">Expresiones</a></li>
+                <li class="submenu"><a href="" style="color: whitesmoke;">Subprogramas (Crear funciones)</a></li>
+                <li class="submenu"><a href="" style="color: whitesmoke;">Ejemplo de un programa hecho con Go</a></li>
+            </ul>
+        </nav>
+
+        <section class="control">
+            <article style="background-color: blue;">
+                <hgroup>
+                    <h1 style="background-color: blue;">Estructuras condicionales</h1>
+                </hgroup><br>
+                <p style="background-color: blue;">Primero hay que saber que son las estructuras de control de flujo de
+                    un lenguaje. Las estructuras de control permiten controlar el flujo de la ejecución del código. Para
+                    poder construir programas, es necesario poder echar mano de ellas de forma que representen la lógica
+                    de “que hacer en caso de” y “a donde ir”.</p>
+                <br>
+                <h2 style="background-color: blue;">¿Que estructuras de control existen en el lenguaje Go?</h2>
+                <br>
+                <ul class="text">
+                    <li>if y else</li>
+                    <li>Operadores de comparación</li>
+                    <li>Operadores aritmeticos</li>
+                    <li>Operadores lógicos</li>
+                    <li>switch</li>
+                    <li>for</li>
+                    <li>defer</li>
+                </ul>
+                <br><br>
+                <h2 style="text-align: center;">Sentencia if en Go</h2>
+                <br>
+                <p>Esta es la sentencia mas sencilla de utilizar y se encuentra en casí todos los lenguages de
+                    programación. Representa el paradigma de lo que sucede si una condición se cumple y en combinación
+                    con la sentencia else puede especificar un camino alternativo.</p>
+                <br>
+                <h3>Ejemplo del uso de If en Go:</h3>
+                <br>
+                <img class="imagenes" src="Images/If.PNG">
+                <br><br>
+                <h2 style="text-align: center;">Sentencia else en Go</h2>
+                <br>
+                <p>La sentencia else que se puede traducir como “si no…” o “de lo contrario…", permite definir un bloque
+                    de código en caso de que la condición del if no se cumpla.</p>
+                <br>
+                <h3>Ejemplo del uso de else en Go</h3>
+                <br>
+                <img class="imagenes" src="Images/else.PNG"><br>
+                <p>Ahora el ejemplo de la sentencia If esta actualizado ya que con el uso de "else" podemos abarcar el
+                    caso donde la edad sea menor a 18</p>
+                <br><br>
+                <h2 style="text-align: center;">Else if en Go</h2>
+                <br>
+                <p>Existen casos en los cuales lo que se requiere es poder evaluar multiples condiciones, no solo dos.
+                    En cuyo caso es posible:</p><br>
+                <ul class="text">
+                    <li>Anidar un If dentro de otro</li>
+                    <li>Utilizar else if para cubrir cada una de las condiciones.</li>
+                </ul><br>
+                <h3>Ejemplo de Else if en Go</h3>
+                <br>
+                <img class="imagenes" src="Images/else_if.PNG"><br><br>
+                <p>En este ejemplo hemos capturado una variable juguete.
+                <ul class="text">
+                    <li>En el primer if verificamos si juguete == persona.</li>
+                    <li>Si la anterior condición no se cumple, los siguientes else if validan uno por uno si juguete es
+                        una cosa, animal.</li>
+                    <li>Si no se cumple ninguna de las condiciones se imprime por default la sentencia else.</li>
+                </ul>
+                </p>
+                <br><br>
+                <h2 style="text-align: center;">Operadores de comparación en Go</h2><br>
+                <p>¿Que son? <br> Las expresiones evaluan al final valores boleanos, es decir verdadero (true) o falso (false). Esto quiere decir que cualquier comparación que hagamos entre 2 valores retornará true o false. La lista de comparadores puede evaluar las siguientes expresiones.</p>
+                <br>
+                <img class="imagenesChicas" src="Images/operadoresComp.PNG"><br><br>
+                <h3>Ejemplos de uso</h3><br>
+                <img class="imagenesChicas" src="Images/operadoresComEj.PNG"><br><br>
+                <h2 style="text-align: center;">Operadores aritmeticos en Go</h2><br>
+                <p>¿Que son? <br> Los operadores aritméticos se encargan de ejecutar expresiones aritméticas. Es decir, sumar, restar, multiplicar, dividir, etc.</p>
+                <br>
+                <img class="imagenesChicas" src="Images/operadoresAritm.PNG">
+                <br><br>
+                <h3>Ejemplos de uso</h3><br>
+                <img class="imagenesChicas" src="Images/operadoresAritmEj.PNG"><br><br>
+                <p style="font-weight: bold;">Hay que resaltar que para poder realizar estas operaciones, tanto "x" como "y" tienen que ser del mismo tipo.</p>
+                <br><br>
+                <h2 style="text-align: center;">Operadores logicos en Go</h2><br>
+                <p>¿Que son? <br> Los operadores logicos sirven como apoyo a las estructuras de control, para combinar multiples expresiones. Hablamos de que una expresión lógica puede ser a == b (es a igual a b?). Pero que sucede si la expresión es mas compleja, y ademas de a ser igual a b, tiene que ser diferente de c?. En este caso hacemos uso de los operadores lógicos.</p>
+                <br>
+                <img class="imagenes" src="Images/operadoresLogicos.PNG"><br><br>
+                <h3>Ejemplo del operador logico AND ( && ) en Go</h3><br>
+                <img class="imagenesChicas" src="Images/ejemploAND.PNG">
+                <h3>Ejemplo del operador OR ( || ) en Go</h3><br>
+                <img class="imagenesChicas" src="Images/ejemploOR.PNG">
+                <br><br>
+                <h2 style="text-align: center;">Switch en Go</h2><br>
+                <p>¿En que consiste?<br>La sentencia switch es equivalente al uso de multiples if, elseif, pero presentada en una forma mas ordenada.</p>
+                <br>
+                <h3>Ejemplo de uso</h3><br>
+                <img class="imagenes" src="Images/switchEj.PNG"><br>
+                <p>Podemos ver que este ejemplo es mas ordenado que ir haciendo if, elseif. Switch toma un valor, en este caso juguete y lo compara para cada uno de los case. Ademas los multiple cases que se pueden evaluar, cuando ninguno de ellos se cumple, se puede especificar una ultima condición a ejecutar que es default. Esta es equivalente al else final despues de un conjunto de else if.</p>
+                <br><br>
+                <h2 style="text-align: center;">Bucle for</h2><br>
+                <p>La sentencia for permite te un bloque de codigo se repita N veces. Esto es usualmente conocido como loop o bucle.</p>
+                <br>
+                <h3>Ejemplo del uso del bucle for</h3><br>
+                <img class="imagenes" src="Images/ForEj.PNG"><br>
+                <p>El bucle For recibe 3 parametros</p><br>
+                <ul class="text">
+                    <li>Una expresión inicial (al iniciar el for, i sera igual que 1)</li>
+                    <li>Una expresión de comparación (en cada iteración se comprobara que i sea menor o igual que repeticiones)</li>
+                    <li>Una expresión de actualización (al final de cada iteración se incrementara 1 el valor de i)</li>
+                </ul><br><br>
+                <h2 style="text-align: center;">"Defer" para aplazar funciones</h2><br>
+                <p>Defer es una caracteristica que permite que Go aplace la ejecución de una funcion. Esto puede ser por ejemplo cuando otra función termina de ejecutarse.
+                    El aplazmiento de funciones es generalmente utilizado para realizar tareas de limpieza, una vez que se han completado las actividades a realizar por parte del algoritmo, como cerrar conexiones a base de datos, borrar archivos temporales, limpiar el cache, liberar la memoria, etc.
+                    Supongamos ahora que deseamos conectarnos a la base de datos, y queremos que despues de todas las operaciones se realice automaticamente la desconexión, independientemente del flujo de trabajo que el algoritmo siga.</p><br>
+                <img class="imagenes" src="Images/DeferEj.PNG"><br>
+                <p>En este caso se crearon 4 funciones:</p><br>
+                <ul class="text">
+                    <li>Conectar</li>
+                    <li>Leer</li>
+                    <li>Actualizar</li>
+                    <li>Desconectar</li>
+                </ul><br>
+                <p>Las funciones se invican en el siguiente orden: </p><br>
+                <img class="imagenesChicas" src="Images/DefEj2.PNG"><br>
+                <p>Debido a que desconectar() esta precedido de defer, esta automaticamente se disparará hasta el final de la ejecución de las demas funciones. Si ejecutamos el programa nos entregará lo siguiente.</p><br>
+                <img class="imagenes" src="Images/DeferEj3.PNG"><br><br>
+                <p style="font-style: italic;">Se pueden utilizar multiples defer, pero hay que tomar en cuenta que el orden en el que se ejecuten es el inverso en el que se definan. Es decir el primero que se defina sera el ultimo, el segundo el penúltimo, el tercero el antepenúltimo, etc.</p>
+                <br><br><br>
+                <footer>Autores: Jorge Guerrero y Javier Chi</footer>    
+            </article>
+        </section>
+    </div>
+</body>
+
+</html>

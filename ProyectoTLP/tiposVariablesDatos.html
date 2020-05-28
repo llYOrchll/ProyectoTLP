@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Todo sobre Go!</title>
+    <meta name="description"
+        content="Proyecto de Teoria de Lenguajes de la ¨Programación. Pagina con informacion acerca del lenguaje de programación Go" />
+    <meta name="author" content="Jorge Guerrero Orozco y Javier Chi Ortiz" />
+    <meta name="KeyWords"
+        content="Lenguaje Go, Historia de Go, Informacion de Go, Go, Lenguaje de programación Go, Variables, Tipos de datos Go" />
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" type="image/png" href="Images/favicon.png"> 
+</head>
+
+<body>
+    <div class="agruparVar">
+        <header class="cabecera">
+            <h1 style="background-color: blue;">Variables y Tipos de datos en Go</h1>
+        </header>
+        <nav class="menuInicial">
+            <ul style="background-color: blue;">
+                <li class="submenu"><a href="index.html" style="color: whitesmoke;">Historia de Go</a> </li>
+                <li class="submenu"><a href="" style="color: whitesmoke;">Expresiones</a></li>
+                <li class="submenu"><a href="EstructurasDeControl.html" style="color: whitesmoke;">Estructuras de Control de flujo</a></li>
+                <li class="submenu"><a href="" style="color: whitesmoke;">Subprogramas (Crear funciones)</a></li>
+                <li class="submenu"><a href="" style="color: whitesmoke;">Ejemplo de un programa hecho con Go</a></li>
+            </ul>
+        </nav>
+
+        <section class="variables">
+            <article style="background-color: blue;">
+                <hgroup>
+                    <h1 style="background-color: blue;">Identificadores en Go</h1>
+                </hgroup>
+                <br>
+                <p style="background-color: blue;">
+                    Al igual que en muchos otros lenguajes de programación, en Go puedes declarar variables, funciones y
+                    elementos con un identificador único que tú desees. Un identificador inicia con una letra de la
+                    «A»-«Z» (mayúscula o minúscula) o bien con un guión bajo («_») seguido de una combinación de 0 o N
+                    letras, guiones y dígitos decimales.
+                </p>
+                <br>
+                <p style="background-color: blue;">Se debe de tener cuidado que los identificadores nunca sean iguales a
+                    las palabras reservadas. La siguiente es la lista de palabras reservadas de Go:</p>
+                <br><br>
+                <table>
+                    <tr>
+                        <th colspan="5">Palabras reservadas</th>
+                    </tr>
+                    <tr>
+                        <td>break</td>
+                        <td>case</td>
+                        <td>chan</td>
+                        <td>const</td>
+                        <td>continue</td>
+                    </tr>
+                    <tr>
+                        <td>default</td>
+                        <td>defer</td>
+                        <td>else</td>
+                        <td>fallthrough</td>
+                        <td>for</td>
+                    </tr>
+                    <tr>
+                        <td>funct</td>
+                        <td>go</td>
+                        <td>goto</td>
+                        <td>if</td>
+                        <td>import</td>
+                    </tr>
+                    <tr>
+                        <td>interface</td>
+                        <td>map</td>
+                        <td>package</td>
+                        <td>range</td>
+                        <td>return</td>
+                    </tr>
+                    <tr>
+                        <td>select</td>
+                        <td>struct</td>
+                        <td>switch</td>
+                        <td>type</td>
+                        <td>var</td>
+                    </tr>
+                </table>
+            </article>
+            <br><br><br>
+            <article style="background-color: blue;">
+                <hgroup>
+                    <h1 style="background-color: blue;">Tipos de datos</h1>
+                </hgroup>
+                <br>
+                <p style="background-color: blue;">Como se mencionaba desde el capítulo anterior, Go es un lenguaje de programación con tipado estático y por tanto es necesario declarar las variables antes de usarlas. La razón por la que esto es necesario es porque el compilador necesita conocer cuánto espacio en memoria necesita reservar para variables y cómo interpretar la información guardada en ese espacio de memoria.</p>
+                <br>
+                <p style="background-color: blue;">Las variables en Go se clasifican como:</p><br>
+                <ul class="text">
+                    <li>Booleanas: Variables lógicas con valor true o false.</li>
+                    <li>Numericas: Representan números enteros o de punto flotante.</li>
+                    <li>Cadenas: Secuencia de bytes que representan cadenas de texto inmutable, no es posible cambiar el contenido de una cadena.</li>
+                    <li>Derivadas: Punteros, arreglos, estructuras, uniones, funciones, slices, interfaces, Maps, Channels.</li>
+                </ul>
+                <br>
+                <p style="background-color: blue;">Los números enteros que maneja Go son independientes de la arquitectura del procesador, es decir, no cambian los rangos de valores entre arquitecturas de procesadores como ocurre con C. Los tipos de enteros son:</p>
+                <br>
+                <ul class="text">
+                    <li>uint8 (8 bits)</li>
+                    <li>uint16 (16 bits)</li>
+                    <li>uint32 (32 bits)</li>
+                    <li>uint64 (64 bits)</li>
+                    <li>int8 (8 bits)</li>
+                    <li>int16 16(bits)</li>
+                    <li>int32 (32 bits)</li>
+                    <li>int64 (64 bits)</li>
+                </ul>
+                <br>
+                <p style="background-color: blue;">Por su parte, los tipos numericos con punto flotante son: </p>
+                <br>
+                <ul class="text">
+                    <li>float32</li>
+                    <li>float64</li>
+                    <li>complex64</li>
+                    <li>complex128</li>
+                </ul>
+                <br>
+                <p style="background-color: blue;">Además de números decimales enteros y de punto flotante, Go cuenta con otras implementaciones con sus tamaños específicos:</p>
+                <br>
+                <ul class="text">
+                    <li>byte (8-bits 0 a 255)</li>
+                    <li>rune (32-bits -2147483648 a 2147483647)</li>
+                    <li>uint (32 o 64 bits)</li>
+                    <li>int (32 o 64 bits)</li>
+                    <li>unitptr (Entero guarda los bits no interpretados de un puntero)</li> 
+                </ul>
+            </article>
+            <br>
+            <br>
+            <article style="background-color: blue;">
+                <hgroup>
+                    <h1 style="background-color: blue;">Declaración de variables</h1>
+                </hgroup>
+                <br>
+                <p style="background-color: blue;">Todas las variables en Go tienen un tipo por el cual rigen su valor y su representación. La gran diferencia con otros lenguajes de programación como C, es que Go permite la declaración de variables con un tipo dependiente del tipo de dato de otra variable (esto es conocido como tipo dinámico o inferencia de tipo).</p>
+                <br>
+                <p style="background-color: blue;">Una declaración en Go sigue el siguiente formato:</p>
+                <br>
+                <p style="text-align: center; font-weight: bold; background-color: blue;">var variable tipo_de_dato(opcional)</p>
+                <br>
+                <p style="background-color: blue;">Por ejemplo la declaración de una variable de tipo entero quedaria:</p>
+                <br>
+                <ul class="text">
+                    <li>var x int</li>
+                </ul>
+                <br>
+                <p style="background-color: blue;">O bien puede declararse tambien como: </p>
+                <br>
+                <ul class="text">
+                    <li>var x int <br>int = 3</li>
+                </ul>
+                <br>
+                <p style="background-color: blue;">Inicializacion durante de declaración de variables</p><br>
+                <ul class="text">
+                    <li>var x = 3</li>
+                </ul><br>
+                <p style="background-color: blue;">Nótese que ahora no es necesario especificar el tipo de la variable cuando se inicializa en el momento. Sin embargo, si quisiera hacerse una declaración de tipo por convencionalismo, se puede:</p>
+                <br>
+                <ul class="text">
+                    <li>var x int = 3</li>
+                </ul>
+            </article>
+            <br><br>
+            <footer>Autores: Jorge Guerrero y Javier Chi</footer>
+        </section>
+    </div>
+</body>
+
+</html>

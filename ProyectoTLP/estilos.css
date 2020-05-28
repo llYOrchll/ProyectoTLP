@@ -1,0 +1,145 @@
+*{
+    background-color: #0080FF;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    font-size: 35px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: whitesmoke;
+}
+h2{
+    font-family: fantasy;
+    background-color: blue;
+}
+h3{
+        font-family: fantasy;
+        background-color: blue;
+}
+.agrupar{
+    width: 1250px;
+    border: solid whitesmoke;
+    margin: 20px auto;
+}
+.agruparVar{
+    width: 1250px;
+    border: solid whitesmoke;
+    margin: 20px auto;
+}
+.cabecera{
+    border: 1px solid whitesmoke;
+    padding: 20px;
+    background-color: blue;
+}
+
+.historiaGo{
+    border: 1px solid whitesmoke;
+    padding: 20px;
+    width: 900px;
+    color: whitesmoke;
+    float: left;
+    background: blue;
+    line-height: 25px;
+}
+
+.variables {
+        border: 1px solid whitesmoke;
+        padding: 20px;
+        width: 1210px;
+        color: whitesmoke;
+        float: left;
+        background: blue;
+        line-height: 25px;  
+}
+
+.control {
+    border: 1px solid whitesmoke;
+    padding: 20px;
+    width: 1210px;
+    color: whitesmoke;
+    float: left;
+    background: blue;
+    line-height: 25px;  
+}
+
+.menuInicial{
+    border: 1px solid whitesmoke;
+    padding: 20px;
+    text-align: left;
+    background: blue;
+}
+
+.submenu{
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: bold;
+    list-style: none;
+    display: inline-block;
+    padding: 5px;
+    border: 2px solid whitesmoke;
+}
+li{
+    background-color: blue;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    font-family: sans-serif;
+    background-color: blue;
+}
+
+.text{
+    font-family: sans-serif;
+    padding-left: 35px;
+    background-color: blue;
+}
+
+footer{
+    font-size: 20px;
+    font: bold;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+img {
+    width: 300px;
+    display: block;
+    margin: 125px auto;
+    float: left
+}
+
+.imagenes{
+    width: 720px;
+    display: block;
+    float: none;
+    margin-top: 25px;
+    margin-bottom: 25px;;
+}
+.imagenesChicas{
+    width: 350px;
+    display: block;
+    float: none;
+    margin-top: 25px;
+    margin-bottom: 25px;;
+}
+
+th{
+    border: 1px solid whitesmoke;
+    padding: 10px;
+    font-size: 25px;;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid whitesmoke;
+    font-size: 18px;
+}
+table{
+    border-collapse: collapse;
+    margin: 0 auto;
+}
